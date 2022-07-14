@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cypress Discovery</title>
+</head>
+
+<body>
+    <!-- <h1>Olá, <span id="name"></span></h1>
+    <h2>Você tem <span id="age" style="color: red;" style="font-style: italic;"></span> anos?</h2>
+    <h3>Sua assinatura está ativa <span id="status"> </span></h3> -->
+
+    <h1>CNH</h1>
+
+    <input type="text" name="name" placeholder="nome" id="name">
+    <input type="number" name="age" placeholder="idade" id="age"/>
+    <button type="button" onclick="verifyAge()">Verificar idade</button>
+
+    <script type="text/javascript">
+        
+        function verifyAge(){
+           const nameOfUser = document.querySelector('input[name=name]');
+           var ageOfUser = document.querySelector('input[name=age]');
+
+           if(ageOfUser.value.length == 0){
+            alert(`Idade é um campo obrigatório`)
+            return
+           }
+           if(ageOfUser.value < 0){
+            alert(`Idade informada inválida`)
+            return
+           }
+           var ageOfUserNum = parseInt(ageOfUser.value);
+
+
+
+           if(ageOfUserNum >=18){
+            alert(`Ok, você é maior de idade, pode tirar a CNH`)
+           }else if(ageOfUserNum>4){
+            alert(`Você é menor de idade, por enquanto sugiro andar de bike.`)
+           }else{
+            alert(`Melhor você tomar leite...`)
+           }
+          
+
+        }
+        // var nameOfUser = prompt('Qual o seu nome?');
+        // var ageOfUser = prompt("Informe sua idade.");
+    
+
+
+        // document.getElementById('name').innerText = nameOfUser;
+        // document.getElementById('age').innerText = ageOfUser;
+        
+    </script>
+</body>
+
+</html>

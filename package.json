@@ -1,0 +1,25 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "Rodando JS no servidor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edcruz29/cypressDiscoveryJs.git"
+  },
+  "author": "Eduardo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edcruz29/cypressDiscoveryJs/issues"
+  },
+  "homepage": "https://github.com/edcruz29/cypressDiscoveryJs#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

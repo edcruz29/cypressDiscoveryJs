@@ -23,57 +23,8 @@
     <button type="button" onclick="avengersList()">Surprise!</button>
     <ul id="avengers"></ul>
 
-    <script type="text/javascript">
-
-        var avengers = ['Tony Stark', 'Clint Barton', 'Natasha Romanoff', 'Steve Rogers']
-       
-
-        function avengersList (){
-            var ul = document.getElementById('avengers');
-            ul.innerHTML= '';
-            avengers.forEach((a)=>{
-               var li = document.createElement('li')
-               var text = document.createTextNode(a)
-               li.appendChild(text)
-               ul.appendChild(li)
-            })
-        }
-        
-        function verifyAge(){
-           const nameOfUser = document.querySelector('input[name=name]');
-           var ageOfUser = document.querySelector('input[name=age]');
-
-           if(ageOfUser.value.length == 0){
-            alert(`Idade é um campo obrigatório`)
-            return
-           }
-           if(ageOfUser.value < 0){
-            alert(`Idade informada inválida`)
-            return
-           }
-           var ageOfUserNum = parseInt(ageOfUser.value);
-
-
-
-           if(ageOfUserNum >=18){
-            alert(`Ok, você é maior de idade, pode tirar a CNH`)
-           }else if(ageOfUserNum>4){
-            alert(`Você é menor de idade, por enquanto sugiro andar de bike.`)
-           }else{
-            alert(`Melhor você tomar leite...`)
-           }
-          
-
-        }
-        // var nameOfUser = prompt('Qual o seu nome?');
-        // var ageOfUser = prompt("Informe sua idade.");
-    
-
-
-        // document.getElementById('name').innerText = nameOfUser;
-        // document.getElementById('age').innerText = ageOfUser;
-        
-    </script>
+    <script src="./js/avengers.js"></script>
+    <script src="./js/cnh.js"></script>
 </body>
 
 </html>
